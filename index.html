@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 3</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Había una vez un árbol que amaba a un pequeño niño. Y todos los días el niño venía y recogía sus hojas para hacerse con ellas una corona y jugar al rey del bosque.
+                <br><br>
+                Subía por su tronco y se mecía en sus ramas y comía manzanas. Y ambos jugaban al escondite. Y, cuando estaba cansado, dormía bajo su sombra y el niño amaba al árbol… mucho. Y el árbol era feliz.
+                <br><br>
+                Pero el tiempo pasó. Y el niño creció. Y el árbol se quedaba a menudo solo. Pero un día, el árbol vio venir a su niño y le dijo: "Ven, Niño, súbete a mi tronco y mécete en mis ramas y come mis manzanas y juega bajo mi sombra y sé feliz". "Ya soy muy grande para trepar y jugar," dijo él.
+                <br><br>
+                "Yo quiero comprar cosas y divertirme. Necesito dinero. ¿Podrías dármelo?" "Lo siento", dijo el árbol, "pero yo no tengo dinero. Sólo tengo hojas y manzanas. Coge mis manzanas y véndelas en la ciudad. Así tendrás dinero y serás feliz." Y, así, él se subió al árbol, recogió las manzanas y se las llevó. Y el árbol se sintió feliz.
+                <br><br>
+                Pero pasó mucho tiempo y su niño no volvía… y el árbol estaba triste. Y entonces, un día, regresó y el árbol se agitó alegremente y le dijo, "Ven, Niño, súbete a mi tronco, mécete en mis ramas y sé feliz". "Estoy muy ocupado para trepar árboles," dijo él. "Necesito una casa que me sirva de abrigo".
+                <br><br>
+                "Quiero una esposa y unos niños, y por eso quiero una casa. ¿Puedes tú dármela?" "Yo no tengo casa", dijo el árbol, "El bosque es mi hogar, pero tú puedes cortar mis ramas y hacerte una casa. Entonces serás feliz." Y así él cortó sus ramas y se las llevó para construir su casa. Y el árbol se sintió feliz.
+                <br><br>
+                Pero pasó mucho tiempo y su niño no volvía. Y cuando regresó, el árbol estaba tan feliz que apenas pudo hablar. "Ven, Niño" susurró. "Ven y juega." "Estoy muy viejo y triste para jugar," dijo él. "Quiero un bote que me lleve lejos de aquí. ¿Puedes tú dármelo?" "Corta mi tronco y hazte un bote", dijo el árbol. "Entonces podrás navegar lejos… y serás feliz." Y así él cortó el tronco y se hizo un bote y navegó lejos.
+                <br><br>
+                Y el árbol se sintió feliz… pero no realmente.
+                <br><br>
+                Y después de mucho tiempo su niño volvió nuevamente. "Lo siento, Niño", dijo el árbol, "pero ya no tengo nada para darte. Ya no me quedan manzanas." "Mis dientes son muy débiles para comer manzanas", le contestó. "Ya no me quedan ramas", dijo el árbol. "Tú ya no puedes mecerte en ellas."
+                <br><br>
+                "Estoy muy viejo para columpiarme en las ramas", respondió él. "Ya no tengo tronco", dijo el árbol. "Tú ya no puedes trepar." "Estoy muy cansado para trepar," le contestó. "Lo siento," se lamentó el árbol, "quisiera poder darte algo… pero ya no me queda nada. Soy solo un viejo tocón. Lo siento."
+                <br><br>
+                "Yo no necesito mucho ahora," contestó él, "solo un lugar tranquilo para reposar. Estoy muy cansado."
+                <br><br>
+                "Bien", dijo el árbol reanimándose, "un viejo tocón es bueno para sentarse y descansar. Ven, Niño, siéntate. Siéntate y descansa."
+                <br><br>
+                Y él se sentó… y el árbol fue feliz.
+            </p>                        
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
